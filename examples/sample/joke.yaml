@@ -1,0 +1,11 @@
+apiVersion: sample.demo.crossplane.io/v1alpha1
+kind: Joke
+metadata:
+  name: example
+spec:
+  forProvider:
+    url: https://icanhazdadjoke.com
+    path: /j/R7UfaahVfFd
+    format: text/plain
+  providerConfigRef:
+    name: example

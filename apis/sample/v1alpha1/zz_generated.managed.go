@@ -19,62 +19,62 @@ package v1alpha1
 
 import xpv1 "github.com/crossplane/crossplane-runtime/apis/common/v1"
 
-// GetCondition of this MyType.
-func (mg *MyType) GetCondition(ct xpv1.ConditionType) xpv1.Condition {
+// GetCondition of this Joke.
+func (mg *Joke) GetCondition(ct xpv1.ConditionType) xpv1.Condition {
 	return mg.Status.GetCondition(ct)
 }
 
-// GetDeletionPolicy of this MyType.
-func (mg *MyType) GetDeletionPolicy() xpv1.DeletionPolicy {
+// GetDeletionPolicy of this Joke.
+func (mg *Joke) GetDeletionPolicy() xpv1.DeletionPolicy {
 	return mg.Spec.DeletionPolicy
 }
 
-// GetManagementPolicies of this MyType.
-func (mg *MyType) GetManagementPolicies() xpv1.ManagementPolicies {
+// GetManagementPolicies of this Joke.
+func (mg *Joke) GetManagementPolicies() xpv1.ManagementPolicies {
 	return mg.Spec.ManagementPolicies
 }
 
-// GetProviderConfigReference of this MyType.
-func (mg *MyType) GetProviderConfigReference() *xpv1.Reference {
+// GetProviderConfigReference of this Joke.
+func (mg *Joke) GetProviderConfigReference() *xpv1.Reference {
 	return mg.Spec.ProviderConfigReference
 }
 
-// GetPublishConnectionDetailsTo of this MyType.
-func (mg *MyType) GetPublishConnectionDetailsTo() *xpv1.PublishConnectionDetailsTo {
+// GetPublishConnectionDetailsTo of this Joke.
+func (mg *Joke) GetPublishConnectionDetailsTo() *xpv1.PublishConnectionDetailsTo {
 	return mg.Spec.PublishConnectionDetailsTo
 }
 
-// GetWriteConnectionSecretToReference of this MyType.
-func (mg *MyType) GetWriteConnectionSecretToReference() *xpv1.SecretReference {
+// GetWriteConnectionSecretToReference of this Joke.
+func (mg *Joke) GetWriteConnectionSecretToReference() *xpv1.SecretReference {
 	return mg.Spec.WriteConnectionSecretToReference
 }
 
-// SetConditions of this MyType.
-func (mg *MyType) SetConditions(c ...xpv1.Condition) {
+// SetConditions of this Joke.
+func (mg *Joke) SetConditions(c ...xpv1.Condition) {
 	mg.Status.SetConditions(c...)
 }
 
-// SetDeletionPolicy of this MyType.
-func (mg *MyType) SetDeletionPolicy(r xpv1.DeletionPolicy) {
+// SetDeletionPolicy of this Joke.
+func (mg *Joke) SetDeletionPolicy(r xpv1.DeletionPolicy) {
 	mg.Spec.DeletionPolicy = r
 }
 
-// SetManagementPolicies of this MyType.
-func (mg *MyType) SetManagementPolicies(r xpv1.ManagementPolicies) {
+// SetManagementPolicies of this Joke.
+func (mg *Joke) SetManagementPolicies(r xpv1.ManagementPolicies) {
 	mg.Spec.ManagementPolicies = r
 }
 
-// SetProviderConfigReference of this MyType.
-func (mg *MyType) SetProviderConfigReference(r *xpv1.Reference) {
+// SetProviderConfigReference of this Joke.
+func (mg *Joke) SetProviderConfigReference(r *xpv1.Reference) {
 	mg.Spec.ProviderConfigReference = r
 }
 
-// SetPublishConnectionDetailsTo of this MyType.
-func (mg *MyType) SetPublishConnectionDetailsTo(r *xpv1.PublishConnectionDetailsTo) {
+// SetPublishConnectionDetailsTo of this Joke.
+func (mg *Joke) SetPublishConnectionDetailsTo(r *xpv1.PublishConnectionDetailsTo) {
 	mg.Spec.PublishConnectionDetailsTo = r
 }
 
-// SetWriteConnectionSecretToReference of this MyType.
-func (mg *MyType) SetWriteConnectionSecretToReference(r *xpv1.SecretReference) {
+// SetWriteConnectionSecretToReference of this Joke.
+func (mg *Joke) SetWriteConnectionSecretToReference(r *xpv1.SecretReference) {
 	mg.Spec.WriteConnectionSecretToReference = r
 }
